@@ -71,7 +71,7 @@
 </div>
 <!---------keyboard end--------->
 <!---------life score----------->
-<div class="flex justify-between w-2/4">
+<div class="flex justify-between w-3/4">
     <button class="btn rounded-full bg-purple-700 text-white px-4">
         Life
         <svg
@@ -86,7 +86,7 @@
             stroke-width="2"
             d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
         </svg>
-        <span>1</span>
+        <span id="current-life">5</span>
       </button>
       <button class="btn rounded-full bg-purple-700 text-white px-4">
         Score
@@ -102,19 +102,20 @@
             stroke-width="2"
             d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
         </svg>
-        <span>1</span>
+        <span id="current-score">0</span>
       </button>
 </div>
 </div>
 </section>
 <!-----------playground end---------->
-<section class="hidden score flex justify-center items-center min-h-screen">
+<section id="final-score" class="hidden score flex justify-center items-center min-h-screen">
 <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
-<h1 class="text-8xl">
+<h4 class="text-3xl">Game Over!!</h4>
+  <h1 class="text-8xl">
     <span class="font-extrabold">Score:</span>
-    <span>14</span>
+    <span id="game-score">14</span>
 </h1>
-<button class="btn">Play Again</button>
+<button onclick="play()" class="btn">Play Again</button>
 <p>Practice makes you a Pro.</p>
 </div>
 </section>
